@@ -12,6 +12,8 @@ public class SpawnManager : MonoBehaviour
 
     public Transform[] spawnPoints;
 
+    public float spawnInterval = 5f;
+    public int maxEnemies = 2;
 
 
     void Update()
@@ -71,6 +73,14 @@ public class SpawnManager : MonoBehaviour
             spawnPoints[randomIndex];
 
 
+        //new addition that keeps the max at two enemies for first level.
+        GameObject[] enemies =
+    GameObject.FindGameObjectsWithTag("Enemy");
+
+        if (enemies.Length >= 2)
+        {
+            return;
+        }
 
         Instantiate(
 
@@ -81,6 +91,7 @@ public class SpawnManager : MonoBehaviour
             selectedSpawnPoint.rotation
 
         );
+
 
 
 

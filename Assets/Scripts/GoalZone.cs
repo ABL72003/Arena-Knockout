@@ -15,10 +15,7 @@ public class GoalZone : MonoBehaviour
             DeliveryObject delivery =
                  other.GetComponent<DeliveryObject>();
 
-            if (delivery != null)
-            {
-                delivery.ResetDelivery();
-            }
+            Destroy(other.gameObject);
         }
     }
 }
