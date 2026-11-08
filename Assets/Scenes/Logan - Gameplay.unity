@@ -974,6 +974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HazardZone
   gameManager: {fileID: 1618302856}
+  resetPoint: {fileID: 221042550}
 --- !u!65 &834336547
 BoxCollider:
   m_ObjectHideFlags: 0
