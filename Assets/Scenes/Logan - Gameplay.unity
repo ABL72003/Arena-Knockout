@@ -2344,7 +2344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72d31d4a396c1e149b6d71e3a054ec2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnManager
-  objectPrefab: {fileID: 8281759136835964479, guid: 3f097771f966de4419753b4e00f579ed, type: 3}
+  objectPrefab: {fileID: 8281759136835964479, guid: a9a175f9fda85f94ea0974f2796f0076, type: 3}
   spawnPoints:
   - {fileID: 53265566}
   - {fileID: 1044683516}
@@ -2536,8 +2536,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12cc00f8368432941a06122855d9596b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerPush
-  pushForce: 15
-  pushRange: 3
+  pushForce: 30
+  pushRange: 5
   pushCooldown: 1
 --- !u!1 &2110084407
 GameObject:

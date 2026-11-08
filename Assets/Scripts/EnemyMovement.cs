@@ -5,6 +5,7 @@ public class EnemyMovement : MonoBehaviour
 {
     public float moveSpeed = 2f;
     public float stoppingDistance = 1.2f;
+    private float rotationSpeed = 1.0f;
 
     private Transform player;
     private Rigidbody rb;
@@ -24,6 +25,9 @@ public class EnemyMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+
+        FacePlayer();
+
         if (player == null || rb == null)
             return;
 
@@ -45,5 +49,29 @@ public class EnemyMovement : MonoBehaviour
             rb.position + direction * moveSpeed * Time.fixedDeltaTime;
 
         rb.MovePosition(newPosition);
+    }
+
+
+    void FacePlayer()
+    {
+        if (player == null || rb == null)
+            return;
+
+        Vector3 direction = player.position - rb.position;
+        direction.y = 0f;
+
+        if (direction.sqrMagnitude < 0.001f)
+            return;
+
+        Quaternion targetRotation =
+            Quaternion.LookRotation(-direction, Vector3.up);
+
+        rb.MoveRotation(
+            Quaternion.RotateTowards(
+                rb.rotation,
+                targetRotation,
+                360f * Time.fixedDeltaTime
+            )
+        );
     }
 }
