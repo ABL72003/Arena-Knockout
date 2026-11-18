@@ -4332,7 +4332,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9e9215fe4b8ec2e4685d2207b2e2bef1, type: 2}
+  - {fileID: 2100000, guid: 0fc3e97d6f84fbb4eb91d7baa388520c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4852,7 +4852,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9e9215fe4b8ec2e4685d2207b2e2bef1, type: 2}
+  - {fileID: 2100000, guid: 0fc3e97d6f84fbb4eb91d7baa388520c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4911,7 +4911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2480f146bca264243be2022a101d9b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyPush
-  pushForce: 5
+  pushForce: 20
   pushCooldown: 1.5
 --- !u!54 &-767781187498225399
 Rigidbody:
